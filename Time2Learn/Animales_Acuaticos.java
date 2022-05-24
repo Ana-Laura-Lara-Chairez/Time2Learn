@@ -1,0 +1,503 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Time2Learn;
+
+import java.awt.Color;
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
+/**
+ *
+ * @author Dee Dee Gtz
+ */
+public class Animales_Acuaticos extends javax.swing.JFrame {
+
+    public Animales_Acuaticos() {
+        initComponents();
+        
+        this.setLocationRelativeTo(null);
+        this.setTitle("Animals");        
+        
+        String RutaImagenes = "C:/Time 2 Learn/src/Imagenes/";
+        
+        //Imagen Choose
+        ImageIcon Choose = new ImageIcon(RutaImagenes + "Animales_Acuaticos1.png");
+        Icon ImageChoose = new ImageIcon(Choose.getImage().getScaledInstance(lblChoose.getWidth(), lblChoose.getHeight(), Image.SCALE_DEFAULT));
+        lblChoose.setIcon(ImageChoose);
+        
+        //Imagen Ballena
+        ImageIcon Ballena = new ImageIcon(RutaImagenes + "Animales_Ballena1.png");
+        Icon ImageBallena = new ImageIcon(Ballena.getImage().getScaledInstance(lblBallena.getWidth(), lblBallena.getHeight(), Image.SCALE_DEFAULT));
+        lblBallena.setIcon(ImageBallena);
+        
+        //Imagen Rana
+        ImageIcon Rana = new ImageIcon(RutaImagenes + "Animales_Rana1.png");
+        Icon ImageRana = new ImageIcon(Rana.getImage().getScaledInstance(lblRana.getWidth(), lblRana.getHeight(), Image.SCALE_DEFAULT));
+        lblRana.setIcon(ImageRana);
+        
+        //Imagen Pulpo
+        ImageIcon Pulpo = new ImageIcon(RutaImagenes + "Animales_Pulpo1.png");
+        Icon ImagePulpo = new ImageIcon(Pulpo.getImage().getScaledInstance(lblPulpo.getWidth(), lblPulpo.getHeight(), Image.SCALE_DEFAULT));
+        lblPulpo.setIcon(ImagePulpo);
+        
+        //Imagen Delfin
+        ImageIcon Delfin = new ImageIcon(RutaImagenes + "Animales_Delfin1.png");
+        Icon ImageDelfin = new ImageIcon(Delfin.getImage().getScaledInstance(lblDelfin.getWidth(), lblDelfin.getHeight(), Image.SCALE_DEFAULT));
+        lblDelfin.setIcon(ImageDelfin);
+        
+        //Imagen PezGlobo
+        ImageIcon PezGlobo = new ImageIcon(RutaImagenes + "Animales_PezGlobo1.png");
+        Icon ImagePezGlobo = new ImageIcon(PezGlobo.getImage().getScaledInstance(lblPezGlobo.getWidth(), lblPezGlobo.getHeight(), Image.SCALE_DEFAULT));
+        lblPezGlobo.setIcon(ImagePezGlobo);
+        
+        //Imagen Tiburon
+        ImageIcon Tiburon = new ImageIcon(RutaImagenes + "Animales_Tiburon1.png");
+        Icon ImageTiburon = new ImageIcon(Tiburon.getImage().getScaledInstance(lblTiburon.getWidth(), lblTiburon.getHeight(), Image.SCALE_DEFAULT));
+        lblTiburon.setIcon(ImageTiburon);
+        
+        //Imagen Cangrejo
+        ImageIcon Cangrejo = new ImageIcon(RutaImagenes + "Animales_Cangrejo1.png");
+        Icon ImageCangrejo = new ImageIcon(Cangrejo.getImage().getScaledInstance(lblCangrejo.getWidth(), lblCangrejo.getHeight(), Image.SCALE_DEFAULT));
+        lblCangrejo.setIcon(ImageCangrejo);
+        
+        //Imagen Foca
+        ImageIcon Foca = new ImageIcon(RutaImagenes + "Animales_Foca1.png");
+        Icon ImageFoca = new ImageIcon(Foca.getImage().getScaledInstance(lblFoca.getWidth(), lblFoca.getHeight(), Image.SCALE_DEFAULT));
+        lblFoca.setIcon(ImageFoca);
+        
+        ImageIcon Menu = new ImageIcon(RutaImagenes + "Icono_Menu.png");
+        Icon ImageMenu = new ImageIcon(Menu.getImage().getScaledInstance(lblMenu.getWidth(), lblMenu.getHeight(), Image.SCALE_DEFAULT));
+        lblMenu.setIcon(ImageMenu);
+        
+        ImageIcon Regresar = new ImageIcon(RutaImagenes + "Icono_Regresar.png");
+        Icon ImageRegresar = new ImageIcon(Regresar.getImage().getScaledInstance(lblRegresar.getWidth(), lblRegresar.getHeight(), Image.SCALE_DEFAULT));
+        lblRegresar.setIcon(ImageRegresar);
+        
+        //Imagen de Minimizar
+        ImageIcon Minimizar = new ImageIcon(RutaImagenes + "Icono_Minimizar.png");
+        Icon ImageMinimizar = new ImageIcon(Minimizar.getImage().getScaledInstance(lblMinimizar.getWidth(), lblMinimizar.getHeight(), Image.SCALE_DEFAULT));
+        lblMinimizar.setIcon(ImageMinimizar);
+        
+        //Imagen de Cerrar
+        ImageIcon Cerrar = new ImageIcon(RutaImagenes + "Icono_Cerrar.png");
+        Icon ImageCerrar = new ImageIcon(Cerrar.getImage().getScaledInstance(lblCerrar.getWidth(), lblCerrar.getHeight(), Image.SCALE_DEFAULT));
+        lblCerrar.setIcon(ImageCerrar);
+        
+        //Icono
+        setIconImage(Toolkit.getDefaultToolkit().getImage(RutaImagenes + "Icono.png"));
+    }
+    
+     public void lanzarSplash(){ 
+        SplashSalir S = new SplashSalir();
+        S.setVisible(true);
+        
+        this.dispose();
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        Dialogo = new javax.swing.JDialog();
+        lblNo = new javax.swing.JLabel();
+        lblSi = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblBallena = new javax.swing.JLabel();
+        lblRana = new javax.swing.JLabel();
+        lblPulpo = new javax.swing.JLabel();
+        lblDelfin = new javax.swing.JLabel();
+        lblPezGlobo = new javax.swing.JLabel();
+        lblTiburon = new javax.swing.JLabel();
+        lblCangrejo = new javax.swing.JLabel();
+        lblFoca = new javax.swing.JLabel();
+        lblChoose = new javax.swing.JLabel();
+        lblMenu = new javax.swing.JLabel();
+        lblCerrar = new javax.swing.JLabel();
+        lblMinimizar = new javax.swing.JLabel();
+        lblRegresar = new javax.swing.JLabel();
+
+        Dialogo.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        Dialogo.setAlwaysOnTop(true);
+        Dialogo.setModalExclusionType(null);
+        Dialogo.setUndecorated(true);
+        Dialogo.setResizable(false);
+        Dialogo.setType(java.awt.Window.Type.POPUP);
+        Dialogo.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblNo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblNo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblNoMouseClicked(evt);
+            }
+        });
+        Dialogo.getContentPane().add(lblNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 60, 40));
+
+        lblSi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblSi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSiMouseClicked(evt);
+            }
+        });
+        Dialogo.getContentPane().add(lblSi, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 60, 40));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mensaje_Salir.png"))); // NOI18N
+        Dialogo.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        lblBallena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblBallena.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBallenaMouseClicked(evt);
+            }
+        });
+
+        lblRana.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblRana.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblRanaMouseClicked(evt);
+            }
+        });
+
+        lblPulpo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblPulpo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblPulpoMouseClicked(evt);
+            }
+        });
+
+        lblDelfin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblDelfin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblDelfinMouseClicked(evt);
+            }
+        });
+
+        lblPezGlobo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblPezGlobo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblPezGloboMouseClicked(evt);
+            }
+        });
+
+        lblTiburon.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblTiburon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTiburonMouseClicked(evt);
+            }
+        });
+
+        lblCangrejo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblCangrejo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCangrejoMouseClicked(evt);
+            }
+        });
+
+        lblFoca.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFoca.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFocaMouseClicked(evt);
+            }
+        });
+
+        lblMenu.setText("Menu");
+        lblMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMenuMouseClicked(evt);
+            }
+        });
+
+        lblCerrar.setText("Cerrar");
+        lblCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCerrarMouseClicked(evt);
+            }
+        });
+
+        lblMinimizar.setText("Minimizar");
+        lblMinimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMinimizarMouseClicked(evt);
+            }
+        });
+
+        lblRegresar.setText("Regresar");
+        lblRegresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblRegresar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblRegresarMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(lblRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(230, 230, 230)
+                                .addComponent(lblChoose, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(1000, 1000, 1000)
+                                .addComponent(lblMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
+                                .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(200, 200, 200)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblPezGlobo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblFoca, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblCangrejo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblTiburon, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblBallena, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblRana, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblPulpo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50)
+                                .addComponent(lblDelfin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblChoose, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(100, 100, 100)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblDelfin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPulpo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblRana, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblBallena, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTiburon, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCangrejo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblFoca, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPezGlobo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(321, 321, 321))
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1720, 830));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void lblBallenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBallenaMouseClicked
+        Animales_Ballena B = new Animales_Ballena();
+        B.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblBallenaMouseClicked
+
+    private void lblRanaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRanaMouseClicked
+        Animales_Rana R = new Animales_Rana();
+        R.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblRanaMouseClicked
+
+    private void lblPulpoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPulpoMouseClicked
+        Animales_Pulpo P = new Animales_Pulpo();
+        P.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblPulpoMouseClicked
+
+    private void lblDelfinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDelfinMouseClicked
+        Animales_Delfin D = new Animales_Delfin();
+        D.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblDelfinMouseClicked
+
+    private void lblPezGloboMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPezGloboMouseClicked
+        Animales_PezGlobo P = new Animales_PezGlobo();
+        P.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblPezGloboMouseClicked
+
+    private void lblTiburonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTiburonMouseClicked
+        Animales_Tiburon T = new Animales_Tiburon();
+        T.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblTiburonMouseClicked
+
+    private void lblCangrejoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCangrejoMouseClicked
+        Animales_Cangrejo C = new Animales_Cangrejo();
+        C.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblCangrejoMouseClicked
+
+    private void lblFocaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFocaMouseClicked
+        Animales_Foca F = new Animales_Foca();
+        F.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblFocaMouseClicked
+
+    private void lblMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMenuMouseClicked
+        Facil D = new Facil();
+        D.setVisible(true);
+
+        this.dispose();
+    }//GEN-LAST:event_lblMenuMouseClicked
+
+    private void lblCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCerrarMouseClicked
+        Dialogo.setSize(576, 259);
+        Dialogo.setLocationRelativeTo(null);
+        Dialogo.setVisible(true);
+        Dialogo.setBackground(new Color (0, 0, 0, 0));
+    }//GEN-LAST:event_lblCerrarMouseClicked
+
+    private void lblMinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMinimizarMouseClicked
+        this.setExtendedState(ICONIFIED);
+    }//GEN-LAST:event_lblMinimizarMouseClicked
+
+    private void lblNoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNoMouseClicked
+        Dialogo.dispose();
+    }//GEN-LAST:event_lblNoMouseClicked
+
+    private void lblSiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSiMouseClicked
+        SplashSalir v = new SplashSalir();
+        v.setVisible(true);
+
+        Dialogo.dispose();
+        this.dispose();
+    }//GEN-LAST:event_lblSiMouseClicked
+
+    private void lblRegresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegresarMouseClicked
+        Animales2 a = new Animales2();
+        a.setVisible(true);
+
+        this.dispose();
+    }//GEN-LAST:event_lblRegresarMouseClicked
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Animales_Acuaticos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Animales_Acuaticos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Animales_Acuaticos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Animales_Acuaticos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Animales_Acuaticos().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Dialogo;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblBallena;
+    private javax.swing.JLabel lblCangrejo;
+    private javax.swing.JLabel lblCerrar;
+    private javax.swing.JLabel lblChoose;
+    private javax.swing.JLabel lblDelfin;
+    private javax.swing.JLabel lblFoca;
+    private javax.swing.JLabel lblMenu;
+    private javax.swing.JLabel lblMinimizar;
+    private javax.swing.JLabel lblNo;
+    private javax.swing.JLabel lblPezGlobo;
+    private javax.swing.JLabel lblPulpo;
+    private javax.swing.JLabel lblRana;
+    private javax.swing.JLabel lblRegresar;
+    private javax.swing.JLabel lblSi;
+    private javax.swing.JLabel lblTiburon;
+    // End of variables declaration//GEN-END:variables
+}

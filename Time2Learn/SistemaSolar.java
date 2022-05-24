@@ -1,0 +1,565 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Time2Learn;
+
+import java.awt.Color;
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Dee Dee Gtz
+ */
+public class SistemaSolar extends javax.swing.JFrame {
+
+    public SistemaSolar() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("Difficult Level");        
+        
+        String RutaImagenes = "C:/Time 2 Learn/src/Imagenes/";
+        
+        ImageIcon Menu = new ImageIcon(RutaImagenes + "Icono_Menu.png");
+        Icon ImageMenu = new ImageIcon(Menu.getImage().getScaledInstance(lblCerrar1.getWidth(), lblCerrar1.getHeight(), Image.SCALE_DEFAULT));
+        lblCerrar1.setIcon(ImageMenu);
+        
+        ImageIcon Nivel = new ImageIcon(RutaImagenes + "Sistema Solar.png");
+        Icon ImageNivel = new ImageIcon(Nivel.getImage().getScaledInstance(lblSistemaSolar.getWidth(), lblSistemaSolar.getHeight(), Image.SCALE_DEFAULT));
+        lblSistemaSolar.setIcon(ImageNivel);
+        
+        ImageIcon Sol = new ImageIcon(RutaImagenes + "SistemaSolar_Sol2.png");
+        Icon ImageSol = new ImageIcon(Sol.getImage().getScaledInstance(lblSol.getWidth(), lblSol.getHeight(), Image.SCALE_DEFAULT));
+        lblSol.setIcon(ImageSol);
+        
+        ImageIcon Mercurio = new ImageIcon(RutaImagenes + "SistemaSolar_Mercurio2.png");
+        Icon ImageMercurio = new ImageIcon(Mercurio.getImage().getScaledInstance(lblMercurio.getWidth(), lblMercurio.getHeight(), Image.SCALE_DEFAULT));
+        lblMercurio.setIcon(ImageMercurio);
+        
+        ImageIcon Venus = new ImageIcon(RutaImagenes + "SistemaSolar_Venus2.png");
+        Icon ImageVenus = new ImageIcon(Venus.getImage().getScaledInstance(lblVenus.getWidth(), lblVenus.getHeight(), Image.SCALE_DEFAULT));
+        lblVenus.setIcon(ImageVenus);
+        
+        ImageIcon Tierra = new ImageIcon(RutaImagenes + "SistemaSolar_Tierra2.png");
+        Icon ImageTierra = new ImageIcon(Tierra.getImage().getScaledInstance(lblTierra.getWidth(), lblTierra.getHeight(), Image.SCALE_DEFAULT));
+        lblTierra.setIcon(ImageTierra);
+        
+        ImageIcon Luna = new ImageIcon(RutaImagenes + "SistemaSolar_Luna2.png");
+        Icon ImageLuna = new ImageIcon(Luna.getImage().getScaledInstance(lblLuna.getWidth(), lblLuna.getHeight(), Image.SCALE_DEFAULT));
+        lblLuna.setIcon(ImageLuna);
+        
+        ImageIcon Marte = new ImageIcon(RutaImagenes + "SistemaSolar_Marte2.png");
+        Icon ImageMarte = new ImageIcon(Marte.getImage().getScaledInstance(lblMarte.getWidth(), lblMarte.getHeight(), Image.SCALE_DEFAULT));
+        lblMarte.setIcon(ImageMarte);
+        
+        ImageIcon Jupiter = new ImageIcon(RutaImagenes + "SistemaSolar_Jupiter2.png");
+        Icon ImageJupiter = new ImageIcon(Jupiter.getImage().getScaledInstance(lblJupiter.getWidth(), lblJupiter.getHeight(), Image.SCALE_DEFAULT));
+        lblJupiter.setIcon(ImageJupiter);
+        
+        ImageIcon Saturno = new ImageIcon(RutaImagenes + "SistemaSolar_Saturno2.png");
+        Icon ImageSaturno = new ImageIcon(Saturno.getImage().getScaledInstance(lblSaturno.getWidth(), lblSaturno.getHeight(), Image.SCALE_DEFAULT));
+        lblSaturno.setIcon(ImageSaturno);
+        
+        ImageIcon Urano = new ImageIcon(RutaImagenes + "SistemaSolar_Urano2.png");
+        Icon ImageUrano = new ImageIcon(Urano.getImage().getScaledInstance(lblUrano.getWidth(), lblUrano.getHeight(), Image.SCALE_DEFAULT));
+        lblUrano.setIcon(ImageUrano);
+        
+        ImageIcon Neptuno = new ImageIcon(RutaImagenes + "SistemaSolar_Neptuno2.png");
+        Icon ImageNeptuno = new ImageIcon(Neptuno.getImage().getScaledInstance(lblNeptuno.getWidth(), lblNeptuno.getHeight(), Image.SCALE_DEFAULT));
+        lblNeptuno.setIcon(ImageNeptuno);
+        
+        //Imagen de Cerrar
+        ImageIcon Cerrar = new ImageIcon(RutaImagenes + "Icono_Cerrar.png");
+        Icon ImageCerrar = new ImageIcon(Cerrar.getImage().getScaledInstance(lblCerrar.getWidth(), lblCerrar.getHeight(), Image.SCALE_DEFAULT));
+        lblCerrar.setIcon(ImageCerrar);
+        
+        //Imagen de Minimizar
+        ImageIcon Minimizar = new ImageIcon(RutaImagenes + "Icono_Minimizar.png");
+        Icon ImageMinimizar = new ImageIcon(Minimizar.getImage().getScaledInstance(lblMinimizar.getWidth(), lblMinimizar.getHeight(), Image.SCALE_DEFAULT));
+        lblMinimizar.setIcon(ImageMinimizar);
+        
+        //Icono
+        setIconImage(Toolkit.getDefaultToolkit().getImage(RutaImagenes + "Icono.png"));        
+    }
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        Dialogo = new javax.swing.JDialog();
+        lblNo = new javax.swing.JLabel();
+        lblSi = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblSistemaSolar = new javax.swing.JLabel();
+        lblCerrar = new javax.swing.JLabel();
+        lblMinimizar = new javax.swing.JLabel();
+        lblCerrar1 = new javax.swing.JLabel();
+        lblSol = new javax.swing.JLabel();
+        lblMercurio = new javax.swing.JLabel();
+        lblVenus = new javax.swing.JLabel();
+        lblTierra = new javax.swing.JLabel();
+        lblLuna = new javax.swing.JLabel();
+        lblMarte = new javax.swing.JLabel();
+        lblJupiter = new javax.swing.JLabel();
+        lblSaturno = new javax.swing.JLabel();
+        lblUrano = new javax.swing.JLabel();
+        lblNeptuno = new javax.swing.JLabel();
+
+        Dialogo.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        Dialogo.setAlwaysOnTop(true);
+        Dialogo.setModalExclusionType(null);
+        Dialogo.setUndecorated(true);
+        Dialogo.setResizable(false);
+        Dialogo.setType(java.awt.Window.Type.POPUP);
+        Dialogo.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblNo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblNo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblNoMouseClicked(evt);
+            }
+        });
+        Dialogo.getContentPane().add(lblNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 60, 40));
+
+        lblSi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblSi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSiMouseClicked(evt);
+            }
+        });
+        Dialogo.getContentPane().add(lblSi, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 60, 40));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mensaje_Salir.png"))); // NOI18N
+        Dialogo.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(41, 27, 63));
+
+        lblSistemaSolar.setText("Sistema Solar");
+        lblSistemaSolar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSistemaSolarMouseClicked(evt);
+            }
+        });
+
+        lblCerrar.setText("Cerrar");
+        lblCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCerrarMouseClicked(evt);
+            }
+        });
+
+        lblMinimizar.setText("Minimizar");
+        lblMinimizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMinimizarMouseClicked(evt);
+            }
+        });
+
+        lblCerrar1.setText("Menu");
+        lblCerrar1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblCerrar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblCerrar1MouseClicked(evt);
+            }
+        });
+
+        lblSol.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblSol.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSolMouseClicked(evt);
+            }
+        });
+
+        lblMercurio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblMercurio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMercurioMouseClicked(evt);
+            }
+        });
+
+        lblVenus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblVenus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblVenusMouseClicked(evt);
+            }
+        });
+
+        lblTierra.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblTierra.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTierraMouseClicked(evt);
+            }
+        });
+
+        lblLuna.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblLuna.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblLunaMouseClicked(evt);
+            }
+        });
+
+        lblMarte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblMarte.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblMarteMouseClicked(evt);
+            }
+        });
+
+        lblJupiter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblJupiter.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblJupiterMouseClicked(evt);
+            }
+        });
+
+        lblSaturno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblSaturno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSaturnoMouseClicked(evt);
+            }
+        });
+
+        lblUrano.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblUrano.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblUranoMouseClicked(evt);
+            }
+        });
+
+        lblNeptuno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblNeptuno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblNeptunoMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(lblCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(309, 309, 309)
+                        .addComponent(lblSistemaSolar, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(160, 160, 160)
+                        .addComponent(lblMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(317, 317, 317)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblUrano, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNeptuno, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(61, 61, 61)
+                                .addComponent(lblSol, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(lblSaturno, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(lblMarte, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblJupiter, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(371, 371, 371)
+                        .addComponent(lblMercurio, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
+                        .addComponent(lblVenus, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(lblLuna, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(lblTierra, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(3093, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblMinimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblCerrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(lblSistemaSolar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblVenus, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblMercurio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblTierra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblLuna, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblNeptuno, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblUrano, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblSol, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(lblSaturno, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblMarte, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(lblJupiter, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(503, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void lblCerrar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCerrar1MouseClicked
+        Dificil n = new Dificil();
+        n.setVisible(true);
+
+        this.dispose();
+    }//GEN-LAST:event_lblCerrar1MouseClicked
+
+    private void lblMinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMinimizarMouseClicked
+        this.setExtendedState(ICONIFIED);
+    }//GEN-LAST:event_lblMinimizarMouseClicked
+
+    private void lblCerrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCerrarMouseClicked
+        Dialogo.setSize(576, 259);
+        Dialogo.setLocationRelativeTo(null);
+        Dialogo.setVisible(true);
+        Dialogo.setBackground(new Color (0, 0, 0, 0));
+    }//GEN-LAST:event_lblCerrarMouseClicked
+
+    private void lblSistemaSolarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSistemaSolarMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblSistemaSolarMouseClicked
+
+    private void lblSolMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSolMouseClicked
+        SistemaSolar_Sol v = new SistemaSolar_Sol();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblSolMouseClicked
+
+    private void lblMercurioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMercurioMouseClicked
+        SistemaSolar_Mercurio v = new SistemaSolar_Mercurio();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblMercurioMouseClicked
+
+    private void lblVenusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblVenusMouseClicked
+        SistemaSolar_Venus v = new SistemaSolar_Venus();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblVenusMouseClicked
+
+    private void lblTierraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTierraMouseClicked
+        SistemaSolar_Tierra v = new SistemaSolar_Tierra();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblTierraMouseClicked
+
+    private void lblLunaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLunaMouseClicked
+        SistemaSolar_Luna v = new SistemaSolar_Luna();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblLunaMouseClicked
+
+    private void lblMarteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblMarteMouseClicked
+        SistemaSolar_Marte v = new SistemaSolar_Marte();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblMarteMouseClicked
+
+    private void lblJupiterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblJupiterMouseClicked
+        SistemaSolar_Jupiter v = new SistemaSolar_Jupiter();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblJupiterMouseClicked
+
+    private void lblSaturnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSaturnoMouseClicked
+        SistemaSolar_Saturno v = new SistemaSolar_Saturno();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblSaturnoMouseClicked
+
+    private void lblUranoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblUranoMouseClicked
+        SistemaSolar_Urano v = new SistemaSolar_Urano();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblUranoMouseClicked
+
+    private void lblNeptunoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNeptunoMouseClicked
+        SistemaSolar_Neptuno v = new SistemaSolar_Neptuno();
+        v.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_lblNeptunoMouseClicked
+
+    private void lblNoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblNoMouseClicked
+        Dialogo.dispose();
+    }//GEN-LAST:event_lblNoMouseClicked
+
+    private void lblSiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSiMouseClicked
+        SplashSalir v = new SplashSalir();
+        v.setVisible(true);
+
+        Dialogo.dispose();
+        this.dispose();
+    }//GEN-LAST:event_lblSiMouseClicked
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(SistemaSolar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(SistemaSolar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(SistemaSolar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(SistemaSolar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new SistemaSolar().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Dialogo;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblCerrar;
+    private javax.swing.JLabel lblCerrar1;
+    private javax.swing.JLabel lblJupiter;
+    private javax.swing.JLabel lblLuna;
+    private javax.swing.JLabel lblMarte;
+    private javax.swing.JLabel lblMercurio;
+    private javax.swing.JLabel lblMinimizar;
+    private javax.swing.JLabel lblNeptuno;
+    private javax.swing.JLabel lblNo;
+    private javax.swing.JLabel lblSaturno;
+    private javax.swing.JLabel lblSi;
+    private javax.swing.JLabel lblSistemaSolar;
+    private javax.swing.JLabel lblSol;
+    private javax.swing.JLabel lblTierra;
+    private javax.swing.JLabel lblUrano;
+    private javax.swing.JLabel lblVenus;
+    // End of variables declaration//GEN-END:variables
+}
